@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { DatePicker, Button, Form, Input, Checkbox, Carousel } from "antd";
+import Divider from "./divider";
 
 export default function Home() {
   const Click = () => {
@@ -16,6 +17,8 @@ export default function Home() {
   };
 
   return (
+    <>
+    <Divider />
     <div className="grid mt-5 items-center justify-center">
       <Carousel autoplay>
         <div
@@ -131,5 +134,6 @@ export default function Home() {
         </Form.Item>
       </Form>
     </div>
+    </>
   );
 }
